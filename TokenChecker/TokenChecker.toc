@@ -1,0 +1,10 @@
+## Interface: 80205
+## Title: Titan Panel [|cffd6266cTokenChecker|r]
+## Notes: Displays the current market price of wow tokens
+## Author: BloddDragon2580
+## Dependencies: Titan
+## Version: 1.5
+
+LibStub.lua
+LibDataBroker-1.1.lua
+TokenChecker.lua
