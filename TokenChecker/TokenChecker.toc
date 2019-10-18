@@ -3,8 +3,11 @@
 ## Notes: Displays the current market price of wow tokens
 ## Author: BloddDragon2580
 ## Dependencies: Titan
-## Version: 1.5
+## Version: 2.0
 
-LibStub.lua
-LibDataBroker-1.1.lua
+
+embeds.xml
+
+locale\locale.xml
+
 TokenChecker.lua

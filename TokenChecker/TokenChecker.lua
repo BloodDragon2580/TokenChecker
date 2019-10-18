@@ -1,12 +1,13 @@
-if not LibStub then error("Token Checker requires LibStub") end
+if not LibStub then error("TokenChecker requires LibStub") end
+local L = LibStub("AceLocale-3.0"):GetLocale("TokenChecker", false)
 
 local lib = LibStub:GetLibrary("LibDataBroker-1.1");
 local tokenIcon1 = "Interface\\Icons\\WoW_Token01";
 local tokenIcon2 = "Interface\\Icons\\WoW_Token02";
 local minutesOfTime = 43200;
 
-local inactiveText = "|cFFFFFFFFToken Price:|r |cFF888888n/a|r"; -- 0 arg
-local activeText = "|cFFFFFFFFToken Price:|r |cFF00FF00%s|r"; -- 2 arg, price, duration
+local inactiveText = L["inactiv"]; -- 0 arg
+local activeText = L["active"]; -- 2 arg, price, duration
 local market = CreateFrame("frame");
 
 local function partial(f, ...)
@@ -21,13 +22,13 @@ local function RequestNewPrice()
 end
 
 local function UpdateTooltip(self, tooltip)
-	tooltip:AddLine(format("|cFFFFFFFFToken Price Watch|r"));
+	tooltip:AddLine(format(L["Price Watch"]));
 	tooltip:AddLine();
-	tooltip:AddLine("|cFFFFFFFFPrice refreshed every 5 minutes|r");
-	tooltip:AddLine("|cFFFFFFFFClick to fast refresh of current market price|r");
+	tooltip:AddLine(L["5 minutes"]);
+	tooltip:AddLine(L["fast refresh"]);
 end
 
-local datamarket = lib:NewDataObject("Token Checker", { type = "data source", text = inactiveText, icon = tokenIcon2, OnTooltipShow = partial(UpdateTooltip, market), OnClick = RequestNewPrice });
+local datamarket = lib:NewDataObject("TokenChecker", { type = "data source", text = inactiveText, icon = tokenIcon2, OnTooltipShow = partial(UpdateTooltip, market), OnClick = RequestNewPrice });
 
 local function MarketPriceUpdated(self, event, ...)
 	if event == "TOKEN_MARKET_PRICE_UPDATED" then
