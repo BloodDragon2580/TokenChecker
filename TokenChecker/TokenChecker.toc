@@ -1,4 +1,4 @@
-## Interface: 90002
+## Interface: 90005
 ## Title: Titan Panel [|cffd6266cTokenChecker|r]
 ## Notes: Displays the current market price of wow tokens
 ## Author: BloddDragon2580
