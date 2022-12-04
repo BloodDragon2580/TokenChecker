@@ -3,7 +3,7 @@
 ## Notes: Displays the current market price of wow tokens
 ## Author: BloddDragon2580
 ## Dependencies: Titan
-## Version: 5.2
+## Version: 5.3
 
 
 embeds.xml
