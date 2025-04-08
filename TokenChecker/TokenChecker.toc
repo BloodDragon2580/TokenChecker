@@ -1,9 +1,9 @@
-## Interface: 110100
+## Interface: 110105
 ## Title: Titan Panel [|cffd6266cTokenChecker|r]
 ## Notes: Displays the current market price of wow tokens
 ## Author: BloddDragon2580
 ## Dependencies: Titan
-## Version: 11.5
+## Version: 11.6
 ## IconTexture: Interface\AddOns\TokenChecker\Media\Texture\logo
 
 embeds.xml
