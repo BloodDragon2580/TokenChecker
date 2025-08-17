@@ -4,7 +4,7 @@
 ## Notes-ruRU: Отображает текущую рыночную стоимость жетона WoW
 ## Author: BloddDragon2580
 ## Dependencies: Titan
-## Version: 12.7
+## Version: 12.9
 ## IconTexture: Interface\AddOns\TokenChecker\Media\Texture\logo
 
 embeds.xml
