@@ -2,7 +2,7 @@
 ## Title: Titan Panel [|cffd6266cTokenChecker|r]
 ## Notes: Displays the current market price of wow tokens
 ## Notes-ruRU: Отображает текущую рыночную стоимость жетона WoW
-## Author: BloddDragon2580
+## Author: BloodDragon2580
 ## Dependencies: Titan
 ## Version: 14.8
 ## IconTexture: Interface\AddOns\TokenChecker\Media\Texture\logo
